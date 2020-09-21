@@ -1,0 +1,27 @@
+
+a {
+
+
+  &:link {
+    color: var(--color-liens);
+    text-decoration: none;
+  }
+
+  &:visited {
+    color: var(--color-liens-visited);
+  }
+
+  &:hover {
+    color: var(--color-liens-survol);
+    text-decoration: underline;
+  }
+
+  &:active {
+
+  }
+
+  &:focus {
+
+  }
+
+}
