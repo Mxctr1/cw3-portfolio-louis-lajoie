@@ -1,4 +1,11 @@
 
+.hero section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -7,18 +14,35 @@
   background-color: var(--color-secondaire);
   text-align: center;
 
+  width: 100%;
+
 
 }
 
-.hero img{
-  width: 50%;
-}
 
+.photo {
+  width: 70%;
+}
 
 .bouton {
   background: linear-gradient(180deg, #62BDFC 0%, #8490FF 100%);
   color: var(--color-white);
 
   padding: 12px 29px 12px 29px;
+
+}
+
+@media screen and (min-width: $vw-medium) {
+
+  .hero {
+
+    flex-direction: row;
+
+    section {
+      width: 48%;
+
+    }
+
+  }
 
 }
